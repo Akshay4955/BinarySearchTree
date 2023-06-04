@@ -23,5 +23,10 @@ internal class Program
         Console.WriteLine("Preorder traversal of tree is :");
         Console.WriteLine("-----------------------------------------------");
         myBST.DisplayPreorder(myBST.GetRoot());
+        Console.WriteLine();
+
+        Console.WriteLine("Inorder traversal of tree is :");
+        Console.WriteLine("-----------------------------------------------");
+        myBST.DisplayInorder(myBST.GetRoot());
     }
 }

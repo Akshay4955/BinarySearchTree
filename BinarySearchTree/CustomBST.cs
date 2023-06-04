@@ -99,4 +99,14 @@ public class CustomBST
             DisplayPreorder(root.Right);
         }
     }
+
+    public void DisplayInorder(Node root)
+    {
+        if (root != null)
+        {
+            DisplayInorder(root.Left);
+            Console.Write("{0} ", root.Data);
+            DisplayPreorder(root.Right);
+        }
+    }
 }
