@@ -56,4 +56,33 @@ public class CustomBST
             }
         }
     }
+
+    public bool Search(int data)
+    {
+        if (Root == null)
+        {
+            return false;
+        }
+
+        Node tempNode = Root;
+
+        while (tempNode != null)
+        {
+            if (data == tempNode.Data)
+            {
+                return true;
+            }
+            else if (data < tempNode.Data)
+            {
+                tempNode = tempNode.Left;
+            }
+            else if (data > tempNode.Data)
+            {
+                tempNode = tempNode.Right;
+            }
+        }
+
+        return false;
+
+    }
 }

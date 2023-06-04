@@ -14,5 +14,8 @@ internal class Program
         myBST.Add(40);
         myBST.Add(60);
         myBST.Add(95);
+
+        Console.WriteLine("Node is found or Not : " + myBST.Search(22));
+        Console.WriteLine("Node is found or Not : " + myBST.Search(45));
     }
 }
