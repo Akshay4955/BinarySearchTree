@@ -102,11 +102,23 @@ public class CustomBST
 
     public void DisplayInorder(Node root)
     {
-        if (root != null)
+        if (root == null)
         {
+            return;
+        }
             DisplayInorder(root.Left);
             Console.Write("{0} ", root.Data);
             DisplayPreorder(root.Right);
+    }
+
+    public void DisplayPostorder(Node root)
+    {
+        if (root == null)
+        {
+            return;
         }
+            DisplayInorder(root.Left);
+            DisplayPreorder(root.Right);
+            Console.Write("{0} ", root.Data);   
     }
 }
