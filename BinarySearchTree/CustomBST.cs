@@ -2,7 +2,7 @@
 
 public class CustomBST
 {
-    private class Node
+    public class Node
     {
         public int Data;
         public Node Left;
@@ -15,6 +15,10 @@ public class CustomBST
     }
 
     private Node Root;
+    public Node GetRoot()
+    {
+        return Root;
+    }
 
     public void Add(int data)
     {
@@ -84,5 +88,15 @@ public class CustomBST
 
         return false;
 
+    }
+
+    public void DisplayPreorder(Node root)
+    {
+        if (root != null)
+        {
+            Console.Write("{0} ", root.Data);
+            DisplayPreorder(root.Left);
+            DisplayPreorder(root.Right);
+        }
     }
 }

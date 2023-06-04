@@ -5,6 +5,7 @@ internal class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Welcome to binary search tree...!!");
+        Console.WriteLine("------------------------------------");
         CustomBST myBST = new CustomBST();
 
         myBST.Add(56);
@@ -17,5 +18,10 @@ internal class Program
 
         Console.WriteLine("Node is found or Not : " + myBST.Search(22));
         Console.WriteLine("Node is found or Not : " + myBST.Search(45));
+        Console.WriteLine();
+
+        Console.WriteLine("Preorder traversal of tree is :");
+        Console.WriteLine("-----------------------------------------------");
+        myBST.DisplayPreorder(myBST.GetRoot());
     }
 }
